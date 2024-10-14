@@ -8,11 +8,11 @@
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
         <Button HorizontalAlignment="Left" 
-VerticalAlignment="Top" 
-Width="50" 
-Height="50" 
-Margin="10,10,0,0" 
-Click="ReturnButton_Click">
+                VerticalAlignment="Top" 
+                Width="50" 
+                Height="50" 
+                Margin="10,10,0,0" 
+                Click="ReturnButton_Click">
 
             <!-- Button Template to make it circular -->
             <Button.Template>
@@ -23,24 +23,43 @@ Click="ReturnButton_Click">
 
                         <!-- Image in the center of the button -->
                         <Image Source="file:///C:/Users/YUJI/source/repos/Main/Main/return.png" 
-               Stretch="Uniform" 
-               HorizontalAlignment="Center" 
-               VerticalAlignment="Center"/>
+                               Stretch="Uniform" 
+                               HorizontalAlignment="Center" 
+                               VerticalAlignment="Center"/>
                     </Grid>
                 </ControlTemplate>
             </Button.Template>
         </Button>
+
         <Label Content="PLEASE INSERT YOUR FLASHDRIVE." 
-       HorizontalAlignment="Center" 
-       VerticalAlignment="Top" 
-       Height="79" 
-       Margin="0,90,0,0" 
-       Width="444" 
-       FontSize="24" 
-       FontWeight="Bold" 
-       HorizontalContentAlignment="Center" 
-       VerticalContentAlignment="Center"/>
-        <Image Source="file:///C:/Users/YUJI/source/repos/Main/Main/flashdrive.png" Margin="272,245,272,61" />
+               HorizontalAlignment="Center" 
+               VerticalAlignment="Top" 
+               Height="79" 
+               Margin="0,90,0,0" 
+               Width="444" 
+               FontSize="24" 
+               FontWeight="Bold" 
+               HorizontalContentAlignment="Center" 
+               VerticalContentAlignment="Center"/>
+
+        <Button HorizontalAlignment="Center" 
+        Height="115" 
+        Margin="0,274,0,0" 
+        VerticalAlignment="Top" 
+        Width="180" 
+        Background="Transparent"  
+            BorderThickness="0"
+        
+            Click="FlashdriveImage_Click">
+            <StackPanel Orientation="Vertical">
+                <Image Source="file:///C:/Users/YUJI/source/repos/Main/Main/flashdrive.png" 
+               Height="81" 
+               Width="161" 
+               HorizontalAlignment="Center"/>
+           
+            </StackPanel>
+        </Button>
+
 
     </Grid>
 </UserControl>

@@ -68,8 +68,35 @@ namespace Main
 
         private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            // Handle selection changes if needed
+            if (e.AddedItems.Count > 0)
+            {
+                // Get the selected item from the ListBox
+                var selectedItem = e.AddedItems[0];
+
+                // Create an instance of the ColorSelection window
+                ColorSelection colorSelectionWindow = new ColorSelection();
+
+                // Optional: Pass the selected item to the ColorSelection window if needed
+                // colorSelectionWindow.SelectedItem = selectedItem; // Uncomment if you have a property in ColorSelection
+
+                // Show the ColorSelection window as a modal dialog
+                bool? result = colorSelectionWindow.ShowDialog();
+
+                // Handle the result if needed
+                if (result == true)
+                {
+                    // Assuming ColorSelection has a property for the selected color
+                    // var selectedColor = colorSelectionWindow.SelectedColor;
+
+                    // You can then use the selected color as needed
+                    // For example, you could set the background color of a control
+                    // this.Background = new SolidColorBrush(selectedColor);
+                }
+            }
         }
+
+
+
 
         private void ReturnButton_Click(object sender, RoutedEventArgs e)
         {
