@@ -55,7 +55,7 @@
                 <ControlTemplate TargetType="Button">
                     <Grid>
                         <Ellipse Fill="Black" />
-                        <Image Source="file:///C:/Users/YUJI/source/repos/Main/Main/return.png" 
+                        <Image Source="/return.png" 
                                Stretch="Uniform" 
                                HorizontalAlignment="Center" 
                                VerticalAlignment="Center"/>

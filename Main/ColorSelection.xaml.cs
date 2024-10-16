@@ -24,14 +24,29 @@ namespace Main
         private void Colored_Click(object sender, RoutedEventArgs e)
         {
             // Handle colored option selected
-            DialogResult = true; // Indicate the dialog was accepted (colored)
-            Close();
+            NavigateToPreview("Colored");
         }
 
         private void Greyscale_Click(object sender, RoutedEventArgs e)
         {
             // Handle greyscale option selected
-            DialogResult = false; // Indicate the dialog was canceled (greyscale)
+            NavigateToPreview("Greyscale");
+        }
+
+        private void NavigateToPreview(string colorOption)
+        {
+            // Find the MainWindow
+            MainWindow mainWindow = (MainWindow)Application.Current.MainWindow;
+
+            // Create an instance of the Previewxaml UserControl
+            Previewxaml previewControl = new Previewxaml();
+            // Optionally pass the color option to the Previewxaml (you may need to modify Previewxaml to accept this)
+            // previewControl.SetColorOption(colorOption);
+
+            // Set the MainContent of MainWindow to the Previewxaml UserControl
+            mainWindow.MainContent.Content = previewControl;
+
+            // Close the ColorSelection window
             Close();
         }
     }

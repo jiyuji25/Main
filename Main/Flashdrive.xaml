@@ -22,7 +22,7 @@
                         <Ellipse Fill="Black" />
 
                         <!-- Image in the center of the button -->
-                        <Image Source="file:///C:/Users/YUJI/source/repos/Main/Main/return.png" 
+                        <Image Source="/return.png" 
                                Stretch="Uniform" 
                                HorizontalAlignment="Center" 
                                VerticalAlignment="Center"/>
@@ -52,9 +52,9 @@
         
             Click="FlashdriveImage_Click">
             <StackPanel Orientation="Vertical">
-                <Image Source="file:///C:/Users/YUJI/source/repos/Main/Main/flashdrive.png" 
+                <Image Source="/flashdrive.png" 
                Height="81" 
-               Width="161" 
+               Width="173" 
                HorizontalAlignment="Center"/>
            
             </StackPanel>

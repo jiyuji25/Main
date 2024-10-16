@@ -23,7 +23,7 @@ Click="ReturnButton_Click">
                         <Ellipse Fill="Black" />
 
                         <!-- Image in the center of the button -->
-                        <Image Source="file:///C:/Users/YUJI/source/repos/Main/Main/return.png" 
+                        <Image Source="/return.png" 
                Stretch="Uniform" 
                HorizontalAlignment="Center" 
                VerticalAlignment="Center"/>

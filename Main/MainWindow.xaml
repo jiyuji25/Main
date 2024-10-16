@@ -17,7 +17,7 @@
         <Grid>
             <!-- ContentControl that will hold dynamic content -->
             <ContentControl x:Name="MainContent">
-                <Grid>
+                <Grid Width="869">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="0*"/>
                         <ColumnDefinition Width="*" />
@@ -28,7 +28,7 @@
                     <Image Margin="343,30,350,304" Grid.Column="1" />
 
                     <!-- Second image -->
-                    <Image Source="file:///C:/Users/YUJI/source/repos/Main/Main/wow.png" Margin="325,7,334,297" Grid.Column="1" />
+                    <Image Source="/wow.png" Margin="325,7,334,297" Grid.Column="1" />
 
                     <!-- Label -->
                     <Label Content="HOW WOULD YOU LIKE TO PRINT?" 
@@ -51,7 +51,7 @@
                             Click="GoToQRCodePage_Click">
 
                         <StackPanel Orientation="Vertical">
-                            <Image Source="file:///C:/Users/YUJI/source/repos/Main/Main/scanner.png" Height="86" Width="86" />
+                            <Image Source="/scanner.png" Height="86" Width="86" />
                             <TextBlock Text="Scan QR Code" HorizontalAlignment="Center" />
                         </StackPanel>
                     </Button>
@@ -65,7 +65,7 @@
                             Background="White" 
                             Grid.Column="1" Click="Button_Click">
                         <StackPanel Orientation="Vertical">
-                            <Image Source="file:///C:/Users/YUJI/source/repos/Main/Main/flashdrive.png" Height="81" Width="161" />
+                            <Image Source="/flashdrive.png" Height="81" Width="161" />
                             <TextBlock Text="Flash Drive" HorizontalAlignment="Center" />
                         </StackPanel>
                     </Button>
@@ -79,7 +79,7 @@
                             Background="White" 
                             Grid.Column="1" Click="Button_Click_1">
                         <StackPanel Orientation="Vertical">
-                            <Image Source="file:///C:/Users/YUJI/source/repos/Main/Main/passcode.png" Height="81" Width="152" />
+                            <Image Source="/passcode.png" Height="81" Width="152" />
                             <TextBlock Text="Enter Unique Code" HorizontalAlignment="Center"/>
                         </StackPanel>
                     </Button>

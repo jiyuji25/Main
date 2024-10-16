@@ -71,4 +71,4 @@ namespace Main
             mainWindow.MainContent.Content = unangPahina; // Set the content of MainContent to Unangpahina
         }
     }
-}
+}   

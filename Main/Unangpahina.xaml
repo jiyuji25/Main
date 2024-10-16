@@ -7,79 +7,79 @@
              mc:Ignorable="d"
              d:DesignHeight="450" d:DesignWidth="800">
 
-	<Viewbox>
-		<Grid>
-			<!-- ContentControl that will hold dynamic content -->
-			<ContentControl x:Name="MainContent">
-				<Grid>
-					<Grid.ColumnDefinitions>
-						<ColumnDefinition Width="0*"/>
-						<ColumnDefinition Width="*" />
-						<!-- Use * to make it flexible -->
-					</Grid.ColumnDefinitions>
+    <Viewbox>
+        <Grid>
+            <!-- ContentControl that will hold dynamic content -->
+            <ContentControl x:Name="MainContent">
+                <Grid Width="866">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0*"/>
+                        <ColumnDefinition Width="*" />
+                        <!-- Use * to make it flexible -->
+                    </Grid.ColumnDefinitions>
 
-					<!-- First image -->
-					<Image Margin="343,30,350,304" Grid.Column="1" />
+                    <!-- First image -->
+                    <Image Margin="343,30,350,304" Grid.Column="1" />
 
-					<!-- Second image -->
-					<Image Source="file:///C:/Users/YUJI/source/repos/Main/Main/wow.png" Margin="325,7,334,297" Grid.Column="1" />
+                    <!-- Second image -->
+                    <Image Source="/wow.png" Margin="325,7,334,297" Grid.Column="1" />
 
-					<!-- Label -->
-					<Label Content="HOW WOULD YOU LIKE TO PRINT?"
-                           HorizontalAlignment="Center"
-                           VerticalAlignment="Top"
-                           FontWeight="Bold"
-                           FontSize="24"
-                           Grid.Column="1"
-                           Margin="0,240,0,0"
+                    <!-- Label -->
+                    <Label Content="HOW WOULD YOU LIKE TO PRINT?" 
+                           HorizontalAlignment="Center" 
+                           VerticalAlignment="Top" 
+                           FontWeight="Bold" 
+                           FontSize="24" 
+                           Grid.Column="1" 
+                           Margin="0,240,0,0" 
                            Width="404" />
 
-					<!-- Button 1: Scan QR Code -->
-					<Button HorizontalAlignment="Left"
-                            Height="115"
-                            Margin="53,323,0,0"
-                            VerticalAlignment="Top"
-                            Width="178"
-                            Background="White"
+                    <!-- Button 1: Scan QR Code -->
+                    <Button HorizontalAlignment="Left" 
+                            Height="115" 
+                            Margin="53,323,0,0" 
+                            VerticalAlignment="Top" 
+                            Width="178" 
+                            Background="White" 
                             Grid.Column="1"
                             Click="GoToQRCodePage_Click">
 
-						<StackPanel Orientation="Vertical">
-							<Image Source="file:///C:/Users/YUJI/source/repos/Main/Main/scanner.png" Height="86" Width="86" />
-							<TextBlock Text="Scan QR Code" HorizontalAlignment="Center" />
-						</StackPanel>
-					</Button>
+                        <StackPanel Orientation="Vertical">
+                            <Image Source="/scanner.png" Height="86" Width="86" />
+                            <TextBlock Text="Scan QR Code" HorizontalAlignment="Center" />
+                        </StackPanel>
+                    </Button>
 
-					<!-- Button 2: Flash Drive -->
-					<Button HorizontalAlignment="Left"
-                            Height="115"
-                            Margin="351,323,0,0"
-                            VerticalAlignment="Top"
-                            Width="180"
-                            Background="White"
+                    <!-- Button 2: Flash Drive -->
+                    <Button HorizontalAlignment="Left" 
+                            Height="115" 
+                            Margin="351,323,0,0" 
+                            VerticalAlignment="Top" 
+                            Width="180" 
+                            Background="White" 
                             Grid.Column="1" Click="Button_Click">
-						<StackPanel Orientation="Vertical">
-							<Image Source="file:///C:/Users/YUJI/source/repos/Main/Main/flashdrive.png" Height="81" Width="161" />
-							<TextBlock Text="Flash Drive" HorizontalAlignment="Center" />
-						</StackPanel>
-					</Button>
+                        <StackPanel Orientation="Vertical">
+                            <Image Source="/flashdrive.png" Height="81" Width="161" />
+                            <TextBlock Text="Flash Drive" HorizontalAlignment="Center" />
+                        </StackPanel>
+                    </Button>
 
-					<!-- Button 3: Enter Unique Code -->
-					<Button HorizontalAlignment="Left"
-                            Height="115"
-                            Margin="657,323,0,0"
-                            VerticalAlignment="Top"
-                            Width="163"
-                            Background="White"
+                    <!-- Button 3: Enter Unique Code -->
+                    <Button HorizontalAlignment="Left" 
+                            Height="115" 
+                            Margin="657,323,0,0" 
+                            VerticalAlignment="Top" 
+                            Width="163" 
+                            Background="White" 
                             Grid.Column="1" Click="Button_Click_1">
-						<StackPanel Orientation="Vertical">
-							<Image Source="file:///C:/Users/YUJI/source/repos/Main/Main/passcode.png" Height="81" Width="152" />
-							<TextBlock Text="Enter Unique Code" HorizontalAlignment="Center"/>
-						</StackPanel>
-					</Button>
+                        <StackPanel Orientation="Vertical">
+                            <Image Source="/passcode.png" Height="81" Width="152" />
+                            <TextBlock Text="Enter Unique Code" HorizontalAlignment="Center"/>
+                        </StackPanel>
+                    </Button>
 
-				</Grid>
-			</ContentControl>
-		</Grid>
-	</Viewbox>
+                </Grid>
+            </ContentControl>
+        </Grid>
+    </Viewbox>
 </UserControl>
