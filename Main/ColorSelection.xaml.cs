@@ -24,14 +24,14 @@ namespace Main
         private void Colored_Click(object sender, RoutedEventArgs e)
         {
             // Handle colored option selected
-            DialogResult = true; // Indicate the dialog was accepted
+            DialogResult = true; // Indicate the dialog was accepted (colored)
             Close();
         }
 
         private void Greyscale_Click(object sender, RoutedEventArgs e)
         {
             // Handle greyscale option selected
-            DialogResult = false; // Indicate the dialog was canceled
+            DialogResult = false; // Indicate the dialog was canceled (greyscale)
             Close();
         }
     }

@@ -25,7 +25,7 @@ namespace Main
 
         private void LoadFileList()
         {
-            // Example file names - you can replace these with your actual file names
+            // Example file names - replace these with your actual file names
             List<string> files = new List<string>
             {
                 "capstone.pdf",
@@ -37,6 +37,38 @@ namespace Main
 
             // Set the ItemsSource for the ListBox
             FileList.ItemsSource = files;
+        }
+
+        private void FileList_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (FileList.SelectedItem != null)
+            {
+                // Get the selected file
+                string selectedFile = FileList.SelectedItem.ToString();
+
+                // Open the ColorSelection window as a dialog
+                ColorSelection colorSelectionWindow = new ColorSelection();
+                bool? result = colorSelectionWindow.ShowDialog();
+
+                if (result == true)
+                {
+                    // User chose "Colored" option
+                    MessageBox.Show("You selected to print '" + selectedFile + "' in colored.");
+                }
+                else if (result == false)
+                {
+                    // User chose "Greyscale" option
+                    MessageBox.Show("You selected to print '" + selectedFile + "' in greyscale.");
+                }
+            }
+        }
+
+        private void ReturnButton_Click(object sender, RoutedEventArgs e)
+        {
+            // Switch to Unangpahina.xaml
+            Unangpahina unangPahina = new Unangpahina(); // Create an instance of Unangpahina
+            MainWindow mainWindow = (MainWindow)Application.Current.MainWindow; // Get MainWindow reference
+            mainWindow.MainContent.Content = unangPahina; // Set the content of MainContent to Unangpahina
         }
     }
 }
