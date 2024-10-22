@@ -21,7 +21,7 @@
             </Grid.RowDefinitions>
 
             <!-- Centered and Larger Text -->
-            <TextBlock Text="Yo have entered invalid code!" 
+            <TextBlock Text="You have entered invalid code!" 
                        TextWrapping="Wrap" FontSize="28" FontWeight="Bold" TextAlignment="Center"
                        HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="0"/>
 
