@@ -50,16 +50,7 @@ namespace Main
                 ColorSelection colorSelectionWindow = new ColorSelection();
                 bool? result = colorSelectionWindow.ShowDialog();
 
-                if (result == true)
-                {
-                    // User chose "Colored" option
-                    MessageBox.Show("You selected to print '" + selectedFile + "' in colored.");
-                }
-                else if (result == false)
-                {
-                    // User chose "Greyscale" option
-                    MessageBox.Show("You selected to print '" + selectedFile + "' in greyscale.");
-                }
+              
             }
         }
 
